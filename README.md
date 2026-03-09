@@ -11,6 +11,10 @@ Designed for use with a physical DJ mixer between multiple Moves. Each Move runs
 
 ## Installation
 
+Install [Move Anything](https://github.com/charlesvestal/move-everything-installer) , go to Move Anything settings (shift+touch vol knob+step 2), scroll to Updates, Module Store, Tools, select and click DJ Deck with the data wheel, scroll the data wheel down to Install, and click the data wheel.
+
+## Building/Development
+
 ```bash
 ./scripts/build.sh          # Docker cross-compile for ARM64 (auto-fetches dependencies)
 ./scripts/install.sh        # Deploy to Move over SSH
