@@ -1,4 +1,4 @@
-# CLAUDE.md - DJ Deck Module for Move Anything
+# CLAUDE.md - DJ Deck Module for Schwung
 
 ## Overview
 

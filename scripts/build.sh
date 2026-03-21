@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build DJ Deck module for Move Anything (ARM64)
+# Build DJ Deck module for Schwung (ARM64)
 # Copyright (c) 2026 DJ Hard Rich
 # Licensed under CC BY-NC-SA 4.0
 #
