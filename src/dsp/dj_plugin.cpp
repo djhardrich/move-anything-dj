@@ -1,5 +1,5 @@
 /*
- * dj_plugin.cpp - Dual-Deck DJ DSP plugin for Move Anything
+ * dj_plugin.cpp - Dual-Deck DJ DSP plugin for Schwung
  * Copyright (c) 2026 DJ Hard Rich
  * Licensed under CC BY-NC-SA 4.0
  *
@@ -371,7 +371,7 @@ static void host_log(const char *fmt, ...) {
     va_end(ap);
     if (s_host && s_host->log) s_host->log(buf);
     if (!s_logfile)
-        s_logfile = fopen("/data/UserData/move-anything/dj_debug.log", "w");
+        s_logfile = fopen("/data/UserData/schwung/dj_debug.log", "w");
     if (s_logfile) { fprintf(s_logfile, "%s\n", buf); fflush(s_logfile); }
 }
 
@@ -1274,7 +1274,7 @@ static void compute_waveform(uint8_t *out, track_t *tracks, int max_frames) {
 /*  Per-song cue persistence                                          */
 /* ------------------------------------------------------------------ */
 
-static const char *CUE_DIR = "/data/UserData/move-anything/dj_cues";
+static const char *CUE_DIR = "/data/UserData/schwung/dj_cues";
 
 static void cue_file_path(char *out, size_t out_len, const char *song_path) {
     unsigned long hash = 5381;
@@ -2248,7 +2248,7 @@ static void dj_set_param(void *ptr, const char *key, const char *val) {
 /*  Playlist directory scanner                                        */
 /* ------------------------------------------------------------------ */
 
-static const char *PLAYLIST_DIR = "/data/UserData/move-anything/dj_playlists";
+static const char *PLAYLIST_DIR = "/data/UserData/schwung/dj_playlists";
 static const int MAX_PLAYLISTS = 32;
 static const int MAX_PLAYLIST_TRACKS = 256;
 
